@@ -5,13 +5,11 @@ public class Dog extends Animal {
     private String breed;
     private String sex;
 
-    private int id;
-
     public Dog(String breed, String sex) {
+        super(1);
+
         this.breed = breed;
         this.sex = sex;
-
-        id = nextId++;
     }
 
     public void makeSound() {
@@ -32,10 +30,6 @@ public class Dog extends Animal {
 
     public void setSex(String sex) {
         this.sex = sex;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String toString(){

@@ -1,10 +1,9 @@
 package pl.jnowacki.animal;
 
-public class Dog {
+public class Dog extends Animal {
 
     private String breed;
     private String sex;
-    private int age;
 
     private int id;
 
@@ -12,7 +11,7 @@ public class Dog {
         this.breed = breed;
         this.sex = sex;
 
-        age = 0;
+        id = nextId++;
     }
 
     public void makeSound() {
@@ -33,14 +32,6 @@ public class Dog {
 
     public void setSex(String sex) {
         this.sex = sex;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public int getId() {

@@ -16,6 +16,7 @@ public class Main {
         for (Dog dog : myPack) {
             System.out.println(dog);
             System.out.println(dog.getId());
+            System.out.println(dog.getAge());
         }
 
 //        Room.MyNestedStaticClass myNested = new Room.MyNestedStaticClass();

@@ -6,6 +6,8 @@ public class Dog {
     private String sex;
     private int age;
 
+    private int id;
+
     public Dog(String breed, String sex) {
         this.breed = breed;
         this.sex = sex;
@@ -39,6 +41,10 @@ public class Dog {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String toString(){
